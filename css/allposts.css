@@ -1,0 +1,467 @@
+@import url('../css/fonts.css');
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span {
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #8e8e8e;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+h1 {
+    font-family: akira;
+    margin: 0;
+    padding: 1rem 0rem 0.5rem 0rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: akira;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+hr {
+    background-color: #000000;
+    margin: 4px 0px;
+}
+
+
+/* ------x------- Global Classes -------x-------*/
+
+
+/* --------------- navbar ----------------- */
+
+.nav {
+    background: black;
+    opacity: 0.6rem;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: coolvetica rg;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: white;
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: black;
+}
+
+.nav .nav-brand a {
+    font-size: 3rem;
+    padding: 1rem 0;
+    color: #ffffff;
+    display: block;
+    font-family: aesthetic romance;
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+.nav .social i {
+    padding: 0.2rem .2rem;
+}
+
+.nav .social i:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+
+/* ---------------- Site Content ----------------*/
+
+main {
+    display: flex;
+    background: url(../assets/text-back.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .site-content {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 75% 25%;
+}
+
+main .posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.208);
+}
+
+main .post-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+}
+
+main .post-content .cat:hover {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+main .allpost h2 {
+    font-family: wayland;
+    padding-bottom: 0.15rem;
+    font-size: 40px;
+    text-align: left;
+}
+
+main .allpost button {
+    padding: 0.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: 0.01px solid black;
+    border-radius: 2rem;
+}
+
+main .allpost button:hover {
+    border: none;
+    background: linear-gradient(120deg, #434343c9 0%, rgba(0, 0, 0, 0.636) 100%);
+    color: white;
+}
+
+main .allpost .indpost {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+/* -------x-------- Site Content --------x-------*/
+
+
+/* --------------- Sidebar ----------------------- */
+
+.site-content>.sidebar .category-list {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.site-content>.sidebar .category-list .list-items {
+    background-color: transparent;
+    border: 1px solid;
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+
+.site-content>.sidebar .category-list .list-title {
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.site-content>.sidebar .category-list .list-items:hover {
+    border: none;
+    background: black;
+    font-size: 25px;
+}
+
+.site-content>.sidebar .category-list .list-items a {
+    color: black;
+}
+
+.site-content>.sidebar .category-list .list-items:hover a {
+    color: white;
+}
+
+
+/* -------x------- Sidebar -----------x----------- */
+
+
+/* ---------x------- Main Content -----x----- */
+
+
+/* ----------------- Footer --------------------- */
+
+footer.footer {
+    height: 100%;
+    background: linear-gradient(to right, #000000 0%, #262626 100%);
+    position: relative;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2 {
+    font-size: 30px;
+    color: white;
+}
+
+footer.footer .container p {
+    font-family: sans-serif;
+    color: white;
+}
+
+footer.footer .newsletter .form-element {
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+    background: white;
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div>img {
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i {
+    color: white;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights {
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+footer.footer .rights h4 {
+    color: rgb(60, 60, 60);
+}
+
+footer.footer .rights h4 a {
+    color: white;
+}
+
+footer.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: grey;
+}
+
+footer.footer .move-up span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ---------x------- Footer ----------x---------- */
+
+
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px) {
+    main .allpost h2 {
+        font-size: 2rem;
+    }
+    main .allpost span {
+        font-size: .7rem;
+    }
+    main .allpost p {
+        font-size: 1rem;
+    }
+    main .allpost button {
+        font-size: 0.7rem;
+    }
+    .site-content>.sidebar .category-list h2 {
+        font-size: 1.3rem;
+    }
+    .site-content>.sidebar .category-list a {
+        font-size: 0.8rem;
+    }
+    .site-content .post-content>.post-image .post-info {
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+    .site-content .sidebar .popular-post .post-info {
+        display: none !important;
+    }
+    footer.footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+    main .posts {
+        border: none;
+    }
+    main .site-content {
+        grid-template-columns: 100%;
+    }
+    footer.footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px) {
+    main .blog {
+        height: 125vh;
+    }
+    .site-content .post-content>.post-image .post-info {
+        display: none;
+    }
+    footer.footer .container>div {
+        padding: 1rem .9rem !important;
+    }
+    footer .rights {
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+    nav .toggle-collapse {
+        width: 80% !important;
+    }
+}
+
+
+/*        x      Viewport less then or equal to 520px       x     */

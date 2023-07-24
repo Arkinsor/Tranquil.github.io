@@ -1,0 +1,44 @@
+@font-face {
+    font-family: aesthetic romance;
+    src: url('../fonts/aestheticromance/Aestheic Romance.ttf')
+}
+
+@font-face {
+    font-family: coolvetica rg;
+    src: url('../fonts/coolvetica/coolvetica rg.otf')
+}
+
+@font-face {
+    font-family: caviar dreams;
+    src: url('../fonts/caviardreams/CaviarDreams.ttf')
+}
+
+@font-face {
+    font-family: akira;
+    src: url('../fonts/Akira/Akira\ Expanded\ Demo.otf')
+}
+
+@font-face {
+    font-family: install;
+    src: url('../fonts/install/Install.otf')
+}
+
+@font-face {
+    font-family: formal;
+    src: url('../fonts/formal/Typo\ Formal\ Regular\ Demo.otf')
+}
+
+@font-face {
+    font-family: folk;
+    src: url('../fonts/folks/Folks-Bold.ttf')
+}
+
+@font-face {
+    font-family: wellington;
+    src: url('../fonts/wellington/TT\ Wellingtons\ Trial\ Light.otf')
+}
+
+@font-face {
+    font-family: wayland;
+    src: url('../fonts/wayland/Wayland\ DEMO.otf')
+}
